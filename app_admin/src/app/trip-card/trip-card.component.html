@@ -1,0 +1,19 @@
+<div class="card h-100 shadow-sm">
+  <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+    <h5 class="mb-0">{{ trip.name }}</h5>
+    <span class="badge bg-light text-primary">{{ trip.code }}</span>
+  </div>
+  <div class="card-body">
+    <p class="card-text mb-1"><strong>Resort:</strong> {{ trip.resort }}</p>
+    <p class="card-text mb-1"><strong>Length:</strong> {{ trip.length }}</p>
+    <p class="card-text mb-1"><strong>Start:</strong> {{ trip.start | date: 'mediumDate' : 'UTC' }}</p>
+    <p class="card-text mb-2"><strong>Price per person:</strong> {{ trip.perPerson | currency: 'USD' }}</p>
+    <p class="card-text text-muted small">{{ trip.description }}</p>
+  </div>
+  @if (isLoggedIn()) {
+    <div class="card-footer bg-white d-flex gap-2">
+      <button type="button" class="btn btn-sm btn-outline-primary" (click)="editTrip(trip)">Edit</button>
+      <button type="button" class="btn btn-sm btn-outline-danger" (click)="deleteTrip(trip)">Delete</button>
+    </div>
+  }
+</div>

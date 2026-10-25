@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand travlr-brand" routerLink="/">Travlr Getaways</a>
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" routerLink="/">Trips</a></li>
+      @if (authenticationService.isLoggedIn()) {
+        <li class="nav-item"><a class="nav-link" routerLink="/add-trip">Add Trip</a></li>
+      }
+    </ul>
+    @if (authenticationService.isLoggedIn()) {
+      <span class="navbar-text small me-3">Signed in as {{ authenticationService.getCurrentUser()?.name }}</span>
+      <button type="button" class="btn btn-outline-light btn-sm" (click)="logout()">Log Out</button>
+    } @else {
+      <a class="btn btn-outline-light btn-sm" routerLink="/login">Log In</a>
+    }
+  </div>
+</nav>
+
+<main class="container pb-5">
+  <router-outlet></router-outlet>
+</main>

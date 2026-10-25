@@ -1,0 +1,9 @@
+/* Global styles for the Travlr Getaways admin SPA */
+body {
+  background-color: #f4f7f9;
+}
+
+.travlr-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}

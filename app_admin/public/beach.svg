@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<defs>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bfe7f7"/><stop offset="1" stop-color="#e9f7fb"/></linearGradient>
+  <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#17c6bd"/><stop offset="1" stop-color="#069caa"/></linearGradient>
+  <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f3e2b2"/><stop offset="1" stop-color="#d7b774"/></linearGradient>
+</defs>
+<rect width="1200" height="250" fill="url(#sky)"/>
+<rect y="210" width="1200" height="145" fill="url(#sea)"/>
+<rect y="350" width="1200" height="170" fill="url(#sand)"/>
+<path d="M0 325 Q160 290 320 325 T640 325 T960 325 T1280 325" fill="none" stroke="#d9fbff" stroke-width="10" opacity=".9"/>
+<g transform="translate(830 180)">
+  <circle cx="120" cy="70" r="68" fill="#eac1a3"/>
+  <path d="M70 42 Q120 -10 182 28 Q205 54 193 105 Q165 58 116 52 Q80 56 60 92 Q56 66 70 42" fill="#b6a68a"/>
+  <path d="M33 245 Q72 124 167 125 Q262 146 292 282 L290 340 L15 340 Z" fill="#f3f1e5"/>
+</g>
+<g opacity=".55" fill="#fff"><circle cx="190" cy="120" r="18"/><circle cx="230" cy="95" r="12"/><circle cx="980" cy="85" r="14"/></g>
+</svg>
